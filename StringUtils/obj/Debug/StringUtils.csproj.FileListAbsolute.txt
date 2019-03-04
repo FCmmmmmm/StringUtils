@@ -9,3 +9,13 @@ C:\Users\fanchuan\source\repos\StringUtils\StringUtils\obj\Debug\StringUtils.csp
 C:\Users\fanchuan\source\repos\StringUtils\StringUtils\obj\Debug\StringUtils.csproj.CoreCompileInputs.cache
 C:\Users\fanchuan\source\repos\StringUtils\StringUtils\obj\Debug\StringUtils.exe
 C:\Users\fanchuan\source\repos\StringUtils\StringUtils\obj\Debug\StringUtils.pdb
+C:\Users\FCmmmmmm\Desktop\StringUtils\StringUtils\bin\Debug\StringUtils.exe.config
+C:\Users\FCmmmmmm\Desktop\StringUtils\StringUtils\obj\Debug\StringUtils.exe
+C:\Users\FCmmmmmm\Desktop\StringUtils\StringUtils\obj\Debug\StringUtils.pdb
+C:\Users\FCmmmmmm\Desktop\StringUtils\StringUtils\bin\Debug\StringUtils.exe
+C:\Users\FCmmmmmm\Desktop\StringUtils\StringUtils\bin\Debug\StringUtils.pdb
+C:\Users\FCmmmmmm\Desktop\StringUtils\StringUtils\obj\Debug\StringUtils.csprojResolveAssemblyReference.cache
+C:\Users\FCmmmmmm\Desktop\StringUtils\StringUtils\obj\Debug\StringUtils.MainForm.resources
+C:\Users\FCmmmmmm\Desktop\StringUtils\StringUtils\obj\Debug\StringUtils.Menu.TextContrast.TextContrast.resources
+C:\Users\FCmmmmmm\Desktop\StringUtils\StringUtils\obj\Debug\StringUtils.Properties.Resources.resources
+C:\Users\FCmmmmmm\Desktop\StringUtils\StringUtils\obj\Debug\StringUtils.csproj.GenerateResource.Cache

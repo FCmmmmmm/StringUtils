@@ -58,6 +58,7 @@
     <Compile Include="Menu\TextContrast\TextContrast.Designer.cs">
       <DependentUpon>TextContrast.cs</DependentUpon>
     </Compile>
+    <Compile Include="Menu\TextContrast\TextProcessor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
