@@ -1,0 +1,11 @@
+C:\Users\fanchuan\source\repos\StringUtils\StringUtils\bin\Debug\StringUtils.exe.config
+C:\Users\fanchuan\source\repos\StringUtils\StringUtils\bin\Debug\StringUtils.exe
+C:\Users\fanchuan\source\repos\StringUtils\StringUtils\bin\Debug\StringUtils.pdb
+C:\Users\fanchuan\source\repos\StringUtils\StringUtils\obj\Debug\StringUtils.csprojAssemblyReference.cache
+C:\Users\fanchuan\source\repos\StringUtils\StringUtils\obj\Debug\StringUtils.MainForm.resources
+C:\Users\fanchuan\source\repos\StringUtils\StringUtils\obj\Debug\StringUtils.Menu.TextContrast.TextContrast.resources
+C:\Users\fanchuan\source\repos\StringUtils\StringUtils\obj\Debug\StringUtils.Properties.Resources.resources
+C:\Users\fanchuan\source\repos\StringUtils\StringUtils\obj\Debug\StringUtils.csproj.GenerateResource.cache
+C:\Users\fanchuan\source\repos\StringUtils\StringUtils\obj\Debug\StringUtils.csproj.CoreCompileInputs.cache
+C:\Users\fanchuan\source\repos\StringUtils\StringUtils\obj\Debug\StringUtils.exe
+C:\Users\fanchuan\source\repos\StringUtils\StringUtils\obj\Debug\StringUtils.pdb
