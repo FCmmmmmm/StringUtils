@@ -19,8 +19,8 @@ namespace StringUtils
             InitializeComponent();
         }
         private static readonly object O = new object();
-        private TextContrast textContrast=new TextContrast();
-        private ToJson toJson = new ToJson();
+        private TextContrast textContrast;
+        private ToJson toJson;
         private void 文本对比ToolStripMenuItem_Click(object sender,EventArgs e)
         {
             if(textContrast == null || textContrast.IsDisposed)
@@ -29,7 +29,7 @@ namespace StringUtils
                 {
                     if(textContrast == null || textContrast.IsDisposed)
                     {
-                        textContrast = new TextContrast();
+                        textContrast = new TextContrast(this);
                     }
                 }
             }
@@ -44,11 +44,12 @@ namespace StringUtils
                 {
                     if(toJson == null || toJson.IsDisposed)
                     {
-                        toJson = new ToJson();
+                        toJson = new ToJson(this);
                     }
                 }
             }
             toJson.Show();
+            this.Visible = false;
         }
     }
 }

@@ -13,8 +13,14 @@ namespace StringUtils.Menu.Json
 {
     public partial class ToJson : Form
     {
+        private MainForm mainForm;
         public ToJson()
         {
+            InitializeComponent();
+        }
+        public ToJson(MainForm form)
+        {
+            this.mainForm = form;
             InitializeComponent();
         }
 
@@ -28,6 +34,16 @@ namespace StringUtils.Menu.Json
                 string re=utils.formatJson(str);
                 textBox2.Text = re;
             }
+        }
+
+        private void ToJson_Load(object sender,EventArgs e)
+        {
+            
+        }
+
+        private void ToJson_FormClosing(object sender,FormClosingEventArgs e)
+        {
+            mainForm.Visible = true;
         }
     }
 }

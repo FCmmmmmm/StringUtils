@@ -13,8 +13,15 @@ namespace StringUtils.Menu.TextContrast
 {
     public partial class TextContrast : Form
     {
+        private MainForm mainForm;
         public TextContrast()
         {
+            InitializeComponent();
+        }
+
+        public TextContrast(MainForm form)
+        {
+            this.mainForm = form;
             InitializeComponent();
         }
 
