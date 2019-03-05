@@ -31,15 +31,15 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.文件ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.工具ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.帮助ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.打开ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.打开ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.关闭ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.工具ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.文本转JSONToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.文本对比ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.帮助ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -76,21 +76,6 @@
             this.文件ToolStripMenuItem.Size = new System.Drawing.Size(51, 24);
             this.文件ToolStripMenuItem.Text = "文件";
             // 
-            // 工具ToolStripMenuItem
-            // 
-            this.工具ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.文本转JSONToolStripMenuItem,
-            this.文本对比ToolStripMenuItem});
-            this.工具ToolStripMenuItem.Name = "工具ToolStripMenuItem";
-            this.工具ToolStripMenuItem.Size = new System.Drawing.Size(51, 24);
-            this.工具ToolStripMenuItem.Text = "工具";
-            // 
-            // 帮助ToolStripMenuItem
-            // 
-            this.帮助ToolStripMenuItem.Name = "帮助ToolStripMenuItem";
-            this.帮助ToolStripMenuItem.Size = new System.Drawing.Size(51, 24);
-            this.帮助ToolStripMenuItem.Text = "帮助";
-            // 
             // 打开ToolStripMenuItem
             // 
             this.打开ToolStripMenuItem.Name = "打开ToolStripMenuItem";
@@ -109,6 +94,35 @@
             this.关闭ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.关闭ToolStripMenuItem.Text = "关闭";
             // 
+            // 工具ToolStripMenuItem
+            // 
+            this.工具ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.文本转JSONToolStripMenuItem,
+            this.文本对比ToolStripMenuItem});
+            this.工具ToolStripMenuItem.Name = "工具ToolStripMenuItem";
+            this.工具ToolStripMenuItem.Size = new System.Drawing.Size(51, 24);
+            this.工具ToolStripMenuItem.Text = "工具";
+            // 
+            // 文本转JSONToolStripMenuItem
+            // 
+            this.文本转JSONToolStripMenuItem.Name = "文本转JSONToolStripMenuItem";
+            this.文本转JSONToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.文本转JSONToolStripMenuItem.Text = "JSon格式化";
+            this.文本转JSONToolStripMenuItem.Click += new System.EventHandler(this.文本转JSONToolStripMenuItem_Click);
+            // 
+            // 文本对比ToolStripMenuItem
+            // 
+            this.文本对比ToolStripMenuItem.Name = "文本对比ToolStripMenuItem";
+            this.文本对比ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.文本对比ToolStripMenuItem.Text = "文本对比";
+            this.文本对比ToolStripMenuItem.Click += new System.EventHandler(this.文本对比ToolStripMenuItem_Click);
+            // 
+            // 帮助ToolStripMenuItem
+            // 
+            this.帮助ToolStripMenuItem.Name = "帮助ToolStripMenuItem";
+            this.帮助ToolStripMenuItem.Size = new System.Drawing.Size(51, 24);
+            this.帮助ToolStripMenuItem.Text = "帮助";
+            // 
             // panel2
             // 
             this.panel2.Location = new System.Drawing.Point(0, 90);
@@ -123,19 +137,6 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(990, 30);
             this.panel3.TabIndex = 2;
-            // 
-            // 文本转JSONToolStripMenuItem
-            // 
-            this.文本转JSONToolStripMenuItem.Name = "文本转JSONToolStripMenuItem";
-            this.文本转JSONToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
-            this.文本转JSONToolStripMenuItem.Text = "JSon格式化";
-            // 
-            // 文本对比ToolStripMenuItem
-            // 
-            this.文本对比ToolStripMenuItem.Name = "文本对比ToolStripMenuItem";
-            this.文本对比ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
-            this.文本对比ToolStripMenuItem.Text = "文本对比";
-            this.文本对比ToolStripMenuItem.Click += new System.EventHandler(this.文本对比ToolStripMenuItem_Click);
             // 
             // MainForm
             // 

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using StringUtils.Menu.Json;
 using StringUtils.Menu.TextContrast;
 
 namespace StringUtils
@@ -17,12 +18,37 @@ namespace StringUtils
         {
             InitializeComponent();
         }
-
-        private static TextContrast textContrast=new TextContrast();
+        private static readonly object O = new object();
+        private TextContrast textContrast=new TextContrast();
+        private ToJson toJson = new ToJson();
         private void 文本对比ToolStripMenuItem_Click(object sender,EventArgs e)
         {
+            if(textContrast == null || textContrast.IsDisposed)
+            {
+                lock(O)
+                {
+                    if(textContrast == null || textContrast.IsDisposed)
+                    {
+                        textContrast = new TextContrast();
+                    }
+                }
+            }
             textContrast.Show();
         }
-  
+
+        private void 文本转JSONToolStripMenuItem_Click(object sender,EventArgs e)
+        {
+            if(toJson == null || toJson.IsDisposed)
+            {
+                lock(O)
+                {
+                    if(toJson == null || toJson.IsDisposed)
+                    {
+                        toJson = new ToJson();
+                    }
+                }
+            }
+            toJson.Show();
+        }
     }
 }

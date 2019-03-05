@@ -51,6 +51,13 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Menu\Json\JsonUtils.cs" />
+    <Compile Include="Menu\Json\ToJson.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu\Json\ToJson.Designer.cs">
+      <DependentUpon>ToJson.cs</DependentUpon>
+    </Compile>
     <Compile Include="Menu\ResizeUtils.cs" />
     <Compile Include="Menu\TextContrast\TextContrast.cs">
       <SubType>Form</SubType>
@@ -63,6 +70,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu\Json\ToJson.resx">
+      <DependentUpon>ToJson.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu\TextContrast\TextContrast.resx">
       <DependentUpon>TextContrast.cs</DependentUpon>

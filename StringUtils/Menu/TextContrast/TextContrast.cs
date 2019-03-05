@@ -22,17 +22,65 @@ namespace StringUtils.Menu.TextContrast
         {
             bool isIgnoreSpace = IgnoreSpace.Checked;
             bool isIgnoreLineBreak = IgnoreLineBreak.Checked;
-            if(isIgnoreLineBreak && isIgnoreSpace)
-            {
-                string leftTxt = Regex.Replace(LeftTextBox.Text.Trim().ToString(), "\r|\n|\\s", "");
-                string reftTxt = Regex.Replace(RightTextBox.Text.Trim().ToString(), "\r|\n|\\s", "");
-            }
+            
         }
 
         private void RightTextBox_TextChanged(object sender,EventArgs e)
         {
             bool isIgnoreSpace = IgnoreSpace.Checked;
             bool isIgnoreLineBreak = IgnoreLineBreak.Checked;
+            GetDiff(LeftTextBox.Text,RightTextBox.Text,isIgnoreLineBreak,isIgnoreSpace);
+        }
+
+        private string[] GetDiff(string str1,string str2,bool isIgnoreSpace,bool isIgnoreLineBreak)
+        {
+            if (isIgnoreLineBreak&&isIgnoreSpace)
+            {
+                string leftTxt = ReplaceRNS(LeftTextBox.Text.Trim().ToString());
+                string rightftTxt = ReplaceRNS(RightTextBox.Text.Trim().ToString());
+                int start = 0, end1 = leftTxt.Length -1,end2=rightftTxt.Length-1;
+                int endL = end1, endR = end2;
+                for(; start <= endL && start <= endR ;)
+                {
+                    if(leftTxt[start] == rightftTxt[start])
+                    {
+                        start++;
+                    }
+                    else
+                    {
+                        break;
+                    }
+                }
+                for (;end1>=0&&end2>=0&&end1>=start&&end2>=start;)
+                {
+                    if(leftTxt[end1] == rightftTxt[end2])
+                    {
+                        end1--;
+                        end2--;
+                    }
+                    else
+                    {
+                        break;
+                    }
+                }
+                richTextBox1.Text = leftTxt;
+                richTextBox2.Text = rightftTxt;
+                richTextBox1.Select(start,end1 +1- start);
+                richTextBox2.Select(start,end2 +1- start);
+                richTextBox1.SelectionColor = Color.Red;
+                richTextBox2.SelectionColor = Color.Red;
+
+            } 
+            else
+            {
+
+            }
+            return null;
+        }
+
+        private string ReplaceRNS(string str)
+        {
+            return Regex.Replace(str,"\r|\n|\\s","");
         }
     }
 }

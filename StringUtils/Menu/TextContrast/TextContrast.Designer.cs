@@ -38,10 +38,10 @@
             this.RightTextBox = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.splitContainer3 = new System.Windows.Forms.SplitContainer();
-            this.leftReLable = new System.Windows.Forms.Label();
-            this.rightReLable = new System.Windows.Forms.Label();
             this.IgnoreSpace = new System.Windows.Forms.CheckBox();
             this.IgnoreLineBreak = new System.Windows.Forms.CheckBox();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -166,30 +166,14 @@
             // 
             // splitContainer3.Panel1
             // 
-            this.splitContainer3.Panel1.Controls.Add(this.leftReLable);
+            this.splitContainer3.Panel1.Controls.Add(this.richTextBox1);
             // 
             // splitContainer3.Panel2
             // 
-            this.splitContainer3.Panel2.Controls.Add(this.rightReLable);
+            this.splitContainer3.Panel2.Controls.Add(this.richTextBox2);
             this.splitContainer3.Size = new System.Drawing.Size(1000, 167);
             this.splitContainer3.SplitterDistance = 333;
             this.splitContainer3.TabIndex = 0;
-            // 
-            // leftReLable
-            // 
-            this.leftReLable.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.leftReLable.Location = new System.Drawing.Point(0, 0);
-            this.leftReLable.Name = "leftReLable";
-            this.leftReLable.Size = new System.Drawing.Size(333, 167);
-            this.leftReLable.TabIndex = 0;
-            // 
-            // rightReLable
-            // 
-            this.rightReLable.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rightReLable.Location = new System.Drawing.Point(0, 0);
-            this.rightReLable.Name = "rightReLable";
-            this.rightReLable.Size = new System.Drawing.Size(663, 167);
-            this.rightReLable.TabIndex = 0;
             // 
             // IgnoreSpace
             // 
@@ -199,6 +183,7 @@
             this.IgnoreSpace.Size = new System.Drawing.Size(89, 19);
             this.IgnoreSpace.TabIndex = 1;
             this.IgnoreSpace.Text = "忽略空格";
+            this.IgnoreSpace.Checked=true;
             this.IgnoreSpace.UseVisualStyleBackColor = true;
             // 
             // IgnoreLineBreak
@@ -209,7 +194,28 @@
             this.IgnoreLineBreak.Size = new System.Drawing.Size(89, 19);
             this.IgnoreLineBreak.TabIndex = 3;
             this.IgnoreLineBreak.Text = "忽略换行";
+            this.IgnoreLineBreak.Checked = true;
             this.IgnoreLineBreak.UseVisualStyleBackColor = true;
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.richTextBox1.Location = new System.Drawing.Point(0, 0);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(333, 167);
+            this.richTextBox1.TabIndex = 1;
+            this.richTextBox1.Text = "";
+            // 
+            // richTextBox2
+            // 
+            this.richTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.richTextBox2.Location = new System.Drawing.Point(0, 0);
+            this.richTextBox2.Name = "richTextBox2";
+            this.richTextBox2.Size = new System.Drawing.Size(663, 167);
+            this.richTextBox2.TabIndex = 1;
+            this.richTextBox2.Text = "";
             // 
             // TextContrast
             // 
@@ -270,9 +276,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox LeftTextBox;
         private System.Windows.Forms.TextBox RightTextBox;
-        private System.Windows.Forms.Label leftReLable;
-        private System.Windows.Forms.Label rightReLable;
         private System.Windows.Forms.CheckBox IgnoreSpace;
         private System.Windows.Forms.CheckBox IgnoreLineBreak;
+        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox richTextBox2;
     }
 }
