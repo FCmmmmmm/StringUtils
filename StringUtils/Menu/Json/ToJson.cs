@@ -1,4 +1,5 @@
-﻿using System;
+﻿using StringUtils.Common.Imp;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -30,8 +31,7 @@ namespace StringUtils.Menu.Json
             str=str.Replace("\n","").Replace(" ","").Replace("\t","").Replace("\r","");
             if(str != null && str.Length > 0)
             {
-                JsonUtils utils = new JsonUtils();
-                string re=utils.formatJson(str);
+                string re = ToJsonUtil.ToJson(str);
                 textBox2.Text = re;
             }
         }

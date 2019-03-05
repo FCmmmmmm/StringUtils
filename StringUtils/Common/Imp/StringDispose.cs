@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using StringUtils.Common;
 
-namespace StringUtils.Menu.Json
+namespace StringUtils.Common.Imp
 {
-    class JsonUtils
+    class StringDispose : IDispose
     {
+
         /**
     * 单位缩进字符串。
     */
@@ -37,7 +39,7 @@ namespace StringUtils.Menu.Json
                 if((key == '[') || (key == '{'))
                 {
                     //（1）如果前面还有字符，并且字符为“：”，打印：换行和缩进字符字符串。
-                    if((i - 1 > 0) && (json[i-1] == ':'))
+                    if((i - 1 > 0) && (json[i - 1] == ':'))
                     {
                         result.Append('\r');
                         result.Append('\n');
@@ -116,5 +118,7 @@ namespace StringUtils.Menu.Json
             }
             return result.ToString();
         }
+
+
     }
 }

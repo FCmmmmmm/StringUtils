@@ -3,12 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;
 
-namespace StringUtils.Menu
+namespace StringUtils.Common
 {
-    class ResizeUtils
+    interface IDispose
     {
-
+       // T Dispose();
     }
 }
